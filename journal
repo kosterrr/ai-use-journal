@@ -1,0 +1,30 @@
+# AI Usage Journal 
+Andrew Koster
+akoster1@terpmail.umd.edu
+Section 0201
+
+## Week 1
+While completing the homework this I what I wrote down for these questions:
+1. Asked AI to explain “f-string”
+5. Had AI explain why .strip() is helpful in this specific context
+14. Explained the max(days_until_due, 1)
+      Asked Ai how to make a version that handles negative days as well
+21. Asked for clarification on why I added “--status recorded” on the sam line and how it prevented using “if statements”
+30. Asked AI if my code was the most efficient way given my current knowledge
+Still unaware of my group, who’s in it, and what our project will be. 
+Looking forward to this week’s lecture 
+
+## Week 2
+While completing the homework this I what I wrote down for these questions:
+6. Forgot to add a double = within my "if" condition 
+for status in available:
+    if status = False:   # ❌ mistake: using = instead of ==
+        count = count + 1
+6. Forgot to captialized the "N" in Networks. Python is case-sensitive, so "network" does not match "Networks", which will raise a ValueError.
+Asked AI to explain why python is case-sensitive and SQL isn't 
+14. Asked ChatGPT how I would code the answer to this problem using a max key instead of a loop
+29. Originally I made I mistake in my "for pos in positions". Afer looking it up, it's called "using the wrong modulo condition"
+It looked like this: 
+for pos in positions:
+    if pos % 2 == 1:  # ❌ mistake: reverses even/odd labeling
+Have my group now and just finished our charter
