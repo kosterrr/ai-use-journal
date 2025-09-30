@@ -28,3 +28,20 @@ It looked like this:
 for pos in positions:
     if pos % 2 == 1:  # ❌ mistake: reverses even/odd labeling
 Have my group now and just finished our charter
+
+## Week 3
+While completing the homeowrk this I what I wrote down for these questions: 
+2. Was unsure how to check if my code was correct, so I asked for help on writing some # Quick Checks code
+# Quick checks
+print(find_book_index(titles, "Clean Code"))              # -> 1
+8. Orignially forgot to append to all three lists, so my code looked like this at first:
+titles.append(new_title)
+authors.append(new_author)
+11. I made a mistake and didn't handle case_sensitive correctly:
+      if case_sensitive:
+    phrase = phrase.lower()
+      flipped logic -> backwards results 
+28. forgot to "handle empty inputs"
+original code looked like this:
+def validate_record(title, author):
+    return title != "" and author != ""  # ❌ fails to catch strings like "   "
