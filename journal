@@ -30,7 +30,7 @@ for pos in positions:
 Have my group now and just finished our charter
 
 ## Week 3
-While completing the homeowrk this I what I wrote down for these questions: 
+While completing the homewprk this I what I wrote down for these questions: 
 2. Was unsure how to check if my code was correct, so I asked for help on writing some # Quick Checks code
 # Quick checks
 print(find_book_index(titles, "Clean Code"))              # -> 1
@@ -45,3 +45,14 @@ authors.append(new_author)
 original code looked like this:
 def validate_record(title, author):
     return title != "" and author != ""  # ❌ fails to catch strings like "   "
+
+## Week 4
+While completing the homework this I what I wrote down for these questions:
+2. Test code expected my original attribute to be named "borrowed_count", not "borrowed". Had to edit my code till the test code in the bottom cell worked
+7. I forgot to check to the current state before changing it. Example, I set "self.availble = False" in "checkout()" without first verifying if it's already "False"
+      This originally made "checkout()" always return True, failing the test case when trying to checkout an already check-out copy
+10. Issue with test assertion. The check range was "3.9 > avg > 3.4". However, since 4.0 is not less that 3.9, the assertion failed. 
+19. Had some trouble with this one. I used ChatGPT to debug, and it said I had returned the wrong data structure. I returned a list of "(topic, count)" tuples instead of just the topic strings. 
+      The assignmnet expected "list[str] and I understood that after debugging.
+
+Enjoying the challenge of the projects part 1 deliverables. Will update progess later. 
