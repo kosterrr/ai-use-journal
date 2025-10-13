@@ -56,3 +56,26 @@ While completing the homework this I what I wrote down for these questions:
       The assignmnet expected "list[str] and I understood that after debugging.
 
 Enjoying the challenge of the projects part 1 deliverables. Will update progess later. 
+
+## Week 5
+While completing the homework and the group project, this is what I wrote down for these questions:
+5. Using Wrong Attribute Names
+Mistake:
+- Forgetting the double underscore for private attributes (__copy_id)
+- Forgetting the single underscore for protected ones (_condition)
+- These naming conventions are part of data hiding and should be followed.
+11. Comparing Dates Incorrectly
+Mistake:
+return self.__due_date > self.__today
+This reverses the logic, so overdue loans return False.
+Fix: Use self.__today > self.__due_date — later dates are “overdue”.
+18. Allowing Member ID to Be Writable
+Mistake:
+@property
+def created_by_member_id(self):
+    return self.__created_by_member_id
+@created_by_member_id.setter
+def created_by_member_id(self, value):
+    self.__created_by_member_id = value
+
+Submitted Part 1 on the project and feeling really good about it! It has been a fun challenege working with my groupmates
