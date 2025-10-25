@@ -79,3 +79,18 @@ def created_by_member_id(self, value):
     self.__created_by_member_id = value
 
 Submitted Part 1 on the project and feeling really good about it! It has been a fun challenege working with my groupmates
+
+## Week 6
+While completing the homework for this week, this is what I wrote down for these questions:
+5. Accidentally returned raw values instead of a subject. 
+      @classmethod
+def standard(cls):
+    return ("Standard", 21, 2)
+9. returned the handle as-is instead of lowercose
+      return first[0] + last
+12. Forgetting to initialize the attributes (isbn, member_id, request_date)
+      def __init__(self, isbn, member_id, request_date):
+    HoldRequest.total_requests += 1
+18. Forgetting to make feature_flags a dictionary. Accidentally set it as a string, which breaks later when you call .get().
+
+Project is certainly picking up, but I am enjoying it a bunch. 
