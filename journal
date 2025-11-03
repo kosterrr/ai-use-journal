@@ -94,3 +94,18 @@ def standard(cls):
 18. Forgetting to make feature_flags a dictionary. Accidentally set it as a string, which breaks later when you call .get().
 
 Project is certainly picking up, but I am enjoying it a bunch. 
+
+## Week 7
+While completing the homework for this week, this is what I wrote down for these questions:
+4. Used the wrong date format string
+Example: writing "%Y/%m/%d" instead of "%Y-%m-%d"
+8. Forgot to handle the error with try/except
+If you don’t wrap the call in a try/except, the program crashes instead of printing a friendly message
+11. Forgetting to return the value
+Example:
+if copies < 0:
+    raise ValueError("copies must be non-negative")
+16. Forgot to use a loop
+The question says “repeatedly prompts the user,” so writing just one input() line fails the “interactive” requirement.
+
+This was by far the hardest week of the group project. More updates to follow. 
