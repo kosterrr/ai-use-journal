@@ -109,3 +109,18 @@ if copies < 0:
 The question says “repeatedly prompts the user,” so writing just one input() line fails the “interactive” requirement.
 
 This was by far the hardest week of the group project. More updates to follow. 
+
+## Week 8
+While completing the homework for this week, this is what I wrote down for these questions:
+4. Forgot to actually override loan_period_days()
+class ReferenceBook(Book):
+    pass
+7. Overriding only one method
+Mistake:
+They add daily_late_fee() to subclasses but forget to implement late_fee() in the parent.
+Then compute_fee(book, days_late) calls a method that doesn’t exist for older classes.
+12. Using member.max_concurrent_loans() instead of checking class type. Confusing this question with the previous one
+19. Comparing the wrong expected values
+Mistake:
+self.assertEqual(rb.loan_period_days(), 14)
+The default Book is 14, but ReferenceBook overrides it to return 0.
