@@ -124,3 +124,19 @@ Then compute_fee(book, days_late) calls a method that doesn’t exist for older 
 Mistake:
 self.assertEqual(rb.loan_period_days(), 14)
 The default Book is 14, but ReferenceBook overrides it to return 0.
+
+## Week 9
+While completing the homework for this week, this is what I wrote down for these questions:
+5. putting reigster() inside the class definition 
+class PDFPamphlet:
+    ...
+    LibraryItem.register(PDFPamphlet)   # ❌ inside class
+10. Returned wrong types
+incorrect return:
+returning a string like "0.25" instead of a float 0.25
+13. Rose the wrong exception type
+raise ValueError("copies must be >= 0")
+20. Forgot to register the virtual subclass
+LibraryItem.register(PDFPamphletAdapter)
+
+
