@@ -139,4 +139,23 @@ raise ValueError("copies must be >= 0")
 20. Forgot to register the virtual subclass
 LibraryItem.register(PDFPamphletAdapter)
 
-
+#Week 10
+While completeing the homework for the week, this is what I wrote down for these questions:
+3. Tried to uppercase the title by modifying _title directly
+This bypasses the validation rules established earlier:
+self._title = self._title.upper()   # skips validation
+Instead of:
+self.title = self.title.upper()
+8. Using replace() before importing it
+new_book = replace(b1, title="X")
+# NameError: replace not defined
+14. Trying to compare Book objects directly
+Incorrect:
+def __contains__(self, book):
+    return book in self._books.values()
+Why it’s wrong:
+Two Book objects with the same ISBN are not the same object in memory.
+Identity mismatch causes “book in catalog” to fail even when catalogs match by ISBN.
+18. Looping directly over catalog._books
+Incorrect:
+for b in catalog._books:
