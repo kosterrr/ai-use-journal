@@ -159,3 +159,20 @@ Identity mismatch causes “book in catalog” to fail even when catalogs match 
 18. Looping directly over catalog._books
 Incorrect:
 for b in catalog._books:
+
+#Week 12
+While working on the project for this week, this is what I wrote down:
+1. Integration Test Failures Due to State Leakage
+We kept having multiple integration tests fail because objects in our system were holding state between tests.
+AI helped explain why this happens when mutable class attributes or shared instances are reused unintentionally.
+Fix: move all instance creation into each test’s setUp method rather than defining objects at the module level.
+2. Confusion About How to Structure System Tests
+I was unsure how a “system test” should differ from an integration test.
+AI explained that system tests simulate an entire workflow end to end, including load → operations → save, while integration tests only check interactions between specific components.
+This helped us design system tests around the actual charter questions.
+3. File I/O Exceptions Not Being Raised Correctly
+We originally wrote the following inside our save/load logic:
+except:
+    return None
+AI explained why bare except blocks swallow important errors and make tests impossible to write.
+Fix: catch explicit exceptions like FileNotFoundError, JSONDecodeError, and raise custom messages so our tests can assert them.
