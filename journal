@@ -176,3 +176,25 @@ except:
     return None
 AI explained why bare except blocks swallow important errors and make tests impossible to write.
 Fix: catch explicit exceptions like FileNotFoundError, JSONDecodeError, and raise custom messages so our tests can assert them.
+
+#Week 13
+While working on the project for this week, this is what I wrote down:
+I utilized AI to aid in debugging and provide integration support on the project, including but not limited to:
+
+• Resolving Python import and module path issues
+
+• Fixing unittest discovery problems
+
+• Correcting file naming inconsistencies
+
+• Addressing type related errors in the analyzer module
+
+• Assisted in structuring unit, integration and system tests
+
+• Verified all tests ran successfully
+
+• Assisted in improving the project's "golden path" demo script
+
+• Assisted in creating a clear, professional video presentation script aligned with the project rubric
+
+The AI was most useful when I was able to utilize it to diagnose complex integration issues and understand why certain errors were occurring, versus just receiving code. I reviewed each suggestion created by the AI prior to implementing them, which greatly increased my understanding of how Python packages are structured, test flows, and overall end-to-end system designs. The decision and implementation of the final product was completed by my team and myself and the AI was used as an additional resource for support and not a substitute for understanding or development.
